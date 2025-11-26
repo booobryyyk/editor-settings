@@ -1,0 +1,143 @@
+{
+  // AI
+  "show_edit_predictions": true,
+  "edit_predictions": {
+    "mode": "eager"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+
+  "agent": {
+    "play_sound_when_agent_done": true,
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-opus-4-5"
+    }
+  },
+
+  // UI & Editor customization
+  "theme": "Github Dark Dimmed",
+  "icon_theme": "JetBrains New UI Icons (Dark)",
+
+  "ui_font_size": 13,
+  "buffer_font_size": 14,
+
+  "confirm_quit": true,
+
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": true
+  },
+
+  // Code editor customization
+  "show_whitespaces": "all",
+  "tab_size": 2,
+  "inlay_hints": {
+    "enabled": false
+  },
+
+  // Editor analytics
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // General formatting
+  "remove_trailing_whitespace_on_save": false,
+  "ensure_final_newline_on_save": true,
+
+  // Language settings and formatting per language
+  "languages": {
+    "TypeScript": {
+      "formatter": {
+        "external": {
+          "command": "awk",
+          "arguments": ["{print}"]
+        }
+      },
+      "prettier": { "allowed": false },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "formatter": {
+        "external": {
+          "command": "awk",
+          "arguments": ["{print}"]
+        }
+      },
+      "prettier": { "allowed": false },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "external": {
+          "command": "awk",
+          "arguments": ["{print}"]
+        }
+      },
+      "prettier": { "allowed": false },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "SCSS": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    }
+  },
+
+  // Language Server Protocol settings
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative"
+          }
+        }
+      }
+    },
+    "eslint": {
+      "settings": {
+        "workingDirectory": {
+          "mode": "auto"
+        }
+      }
+    }
+  },
+
+  // Extensions
+  "auto_install_extensions": {
+    "bearded-icon-theme": true,
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "colored-zed-icons-theme": true,
+    "csv": true,
+    "dockerfile": true,
+    "emmet": true,
+    "fleet-themes": true,
+    "git-firefly": true,
+    "github-theme": true,
+    "graphql": true,
+    "html": true,
+    "intellij-newui-theme": true,
+    "jetbrains-new-ui-icons": true,
+    "make": true,
+    "material-dark": true,
+    "material-icon-theme": true,
+    "monokai-reversed": true,
+    "nginx": true,
+    "react-snippets": true,
+    "scss": true,
+    "typescript-snippets": true,
+    "vercel-theme": true,
+    "vscode-dark-plus": true
+  }
+}
